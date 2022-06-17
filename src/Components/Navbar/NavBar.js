@@ -18,6 +18,7 @@ export const NavBar = () => {
       <Barra>
         <BotaoBarra>
           <Lista>
+             {/* usar link ou navigate ao invés de href */}
             <a href="/">
               <img src={logo} alt="logo" />
             </a>
@@ -33,9 +34,11 @@ export const NavBar = () => {
           </Lista>
           <Carrinho>
             <li>
+               {/* usar link ou navigate ao invés de href */}
               <a href="/">
                 <Icons src={usuario} alt="usuario" />
               </a>
+               {/* usar link ou navigate ao invés de href */}
               <a href="/">
                 <Icons src={carrinho} alt="carrinho" />
               </a>

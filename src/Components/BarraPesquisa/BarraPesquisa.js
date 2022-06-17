@@ -9,6 +9,7 @@ export const BarraPesquisa = () => {
     <BarraConsoles>
       <Consoles>
         <li>
+        {/* usar link ou navigate ao invés de href */}
           <a href="/">
             <ImgConsoles
               src={playstation}
@@ -19,6 +20,7 @@ export const BarraPesquisa = () => {
           </a>
         </li>
         <li>
+           {/* usar link ou navigate ao invés de href */}
           <a href="/">
             <ImgConsoles
               src={xbox}
@@ -29,6 +31,7 @@ export const BarraPesquisa = () => {
           </a>
         </li>
         <li>
+           {/* usar link ou navigate ao invés de href */}
           <a href="/">
             <ImgConsoles src={nintendo} width="130px" height="auto" />
           </a>
