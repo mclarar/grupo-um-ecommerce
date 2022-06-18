@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios from "axios";
 
 export const api = axios.create({
   baseURL: 'http://localhost:8080/ecommerce'
@@ -7,7 +7,7 @@ export const api = axios.create({
 export const buscarProdutos = (token) => {
   const url = '/produto'
   
-  return api.get(url,{headers:{"Access-Control-Allow-Origin": "*", Authorization:"Bearer " + token}})
+  return  api.get(url,{headers:{"Access-Control-Allow-Origin": "*", Authorization:"Bearer " + token}})
 };
 
 export const buscarPedido =()=>{
