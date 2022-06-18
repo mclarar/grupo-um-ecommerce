@@ -2,12 +2,12 @@
 
 import React from "react";
 import {BrowserRouter,Routes,Route} from "react-router-dom"
-import { NavBar } from "../Pages/NavBar";
+import {NavBar} from '../Components/Navbar/NavBar'
 import { Home } from "../Pages/Home";
-import {Contato} from "../Pages/Contato"
-import { Sobre } from "../Pages/Sobre";
+import {Contato} from "../Pages/Contato/Contato"
+import { Sobre } from "../Pages/Sobre/Sobre";
 import { NotFound } from "../Pages/NotFound";
-import { Footer } from "../Pages/Footer";
+import { Footer } from "../Components/Footer/Footer";
 
 export const Root = () =>{
     return(

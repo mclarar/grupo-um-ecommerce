@@ -1,5 +1,5 @@
 import React from "react";
-import { Fundo } from "./Style";
+import { Fundo } from "../../Components/BarraPesquisa/Style";
 import "./stylesobre.css";
 
 export const Sobre = () =>{

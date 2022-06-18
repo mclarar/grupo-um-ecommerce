@@ -1,8 +1,8 @@
 import React from "react";
-import { Fundo } from "./Style";
-import tel from "../Imagens/tel.png"
-import portifolio from "../Imagens/portfolio.png"
-import email from "../Imagens/email.png"
+import { Fundo } from "../../Components/BarraPesquisa/Style";
+import tel from './Imagens/tel.png'
+import email from './Imagens/email.png'
+import portfolio from './Imagens/portfolio.png'
 import "./stylecontato.css"
 
 export const Contato = () =>{
@@ -24,7 +24,7 @@ export const Contato = () =>{
                 <p>maniac@gmail.com</p>
               </div>
               <div class="trabalhe-conosco">
-                <img src={portifolio} alt="" />
+                <img src={portfolio} alt="" />
                 <p>trabalhe conosco</p>
               </div>
             </div>

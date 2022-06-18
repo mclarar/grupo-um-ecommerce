@@ -1,23 +1,10 @@
 
-
-import React from "react";
-import { BarraPesquisa } from "./BarraPesquisa";
-import { Fundo } from "./Style";
-
-export const Home = () =>{
-
-    return(
-        <Fundo>
-        <BarraPesquisa/>
-        
-        </Fundo>
-    )
-}
-
 import React, { useEffect, useState } from "react";
 import { BarraPesquisa } from "../Components/BarraPesquisa/BarraPesquisa";
 import { buscarProdutos } from "../Service/api";
 import { Cards } from "../Components/Cards/Cards";
+import { Fundo } from "../Components/BarraPesquisa/Style";
+
 
 export const Home = () => {
   const [produtos, setProdutos] = useState([
@@ -66,6 +53,7 @@ export const Home = () => {
 
   return (
     <>
+    <Fundo>
       <BarraPesquisa />
       <Cards lista={produtos} />
       {/* {produtos.map((produto, index) => {
@@ -77,6 +65,7 @@ export const Home = () => {
           </>
         );
       })} */}
+      </Fundo>
     </>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
-import { Rodape,Desenvolvedores,LogoRodape} from "./Style";
-import logo from "../Imagens/logo-.png"
+import { Rodape,Desenvolvedores,LogoRodape } from "../BarraPesquisa/Style";
+import logo from './Imagens/logo-.png'
 
 export const Footer = () => {
 
