@@ -77,4 +77,18 @@ padding-top: 10px;
 
 
 `;
+export const Rodape = styled.footer`
+
+`;
+export const Desenvolvedores = styled.div`
+background-color: blueviolet;
+display: flex;
+justify-content: space-between;
+`;
+export const LogoRodape = styled.img`
+width: 100px;
+height: 80px;
+padding-right: 10px;
+`;
+
 

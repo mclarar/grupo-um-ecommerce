@@ -5,6 +5,7 @@ import { Home } from "../Pages/Home";
 import {Contato} from "../Pages/Contato"
 import { Sobre } from "../Pages/Sobre";
 import { NotFound } from "../Pages/NotFound";
+import { Footer } from "../Pages/Footer";
 
 export const Root = () =>{
     return(
@@ -16,6 +17,7 @@ export const Root = () =>{
         <Route path="/contato" element={<Contato/>}/>
         <Route path="*" element={<NotFound/>}/>
         </Routes>
+        <Footer/>
         </BrowserRouter>
     )
 }
