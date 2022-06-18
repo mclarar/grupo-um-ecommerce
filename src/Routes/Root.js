@@ -8,6 +8,7 @@ import {Contato} from "../Pages/Contato/Contato"
 import { Sobre } from "../Pages/Sobre/Sobre";
 import { NotFound } from "../Pages/NotFound";
 import { Footer } from "../Components/Footer/Footer";
+import { Carrinho } from "../Components/BarraPesquisa/Style";
 
 export const Root = () =>{
     return(
@@ -17,6 +18,7 @@ export const Root = () =>{
         <Route path="/" element= {<Home/>}/>
         <Route path="/sobre" element= {<Sobre/>}/>
         <Route path="/contato" element={<Contato/>}/>
+        <Route path="/carrinho" element={<Carrinho/>}/>
         <Route path="*" element={<NotFound/>}/>
         </Routes>
         <Footer/>
