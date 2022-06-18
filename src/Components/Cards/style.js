@@ -36,25 +36,25 @@ export const Card = styled.div`
   }
 `;
 
-// export const topCard = styled.div`
-//   width: 100%;
-//   height: 60%;
-//   display: flex;
-//   align-items: center;
-// `;
+export const TopCard = styled.div`
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+`;
 
-// export const topCardImage = styled.img`
-//   width: 100%;
-//   height: 100%;
-//   align-items: center;
-// `;
+export const topCardImage = styled.img`
+  width: 100%;
+  height: 100%;
+  align-items: center;
+`;
 
-// export const bottomCard = styled.div`
-//   width: 100%;
-//   height: 40%;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   opacity: 0%;
-// `;
+export const bottomCard = styled.div`
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0%;
+`;

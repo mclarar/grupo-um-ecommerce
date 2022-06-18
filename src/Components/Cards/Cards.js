@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { CardContainer, Card} from "./style";
+import { CardContainer, Card, TopCard} from "./style";
 import "./Card.css"
 import "./funcoes"
+import { BotaoAdicionarCarrinho } from "../BotaoAdicionarCarrinho/BotaoAdicionarCarrinho";
 
 
 export const Cards = (props) => {
@@ -21,13 +22,15 @@ export const Cards = (props) => {
     <CardContainer>
       {props.lista.map((res) => (
         <Card>
-          <div className="top-card">
+          <TopCard>
             <img className="topCardImage" src={res.nomeImagemProduto}/>
-          </div>
+          </TopCard>
           <div className="bottom-card">
             <span>{res.nomeProduto}</span>
             <span>R${res.valorUnitario}</span>
-            <div class="star">
+            <BotaoAdicionarCarrinho id={res.idProduto}></BotaoAdicionarCarrinho>
+
+            {/* <div class="star">
               <a href="javascript:void(0)" onClick="Avaliar(2,'s1-c1','s2-c1','s3-c1','s4-c1','s5-c1','rating-c1','c1')">
                 <img src={star} id="s1" /></a>
               <a href="javascript:void(0)" onClick="Avaliar(2,'s1-c1','s2-c1','s3-c1','s4-c1','s5-c1','rating-c1','c1')">
@@ -39,7 +42,7 @@ export const Cards = (props) => {
               <a href="javascript:void(0)" onClick="Avaliar(5,'s1-c1','s2-c1','s3-c1','s4-c1','s5-c1','rating-c1','c1')">
                 <img src={star} id="s5" /></a>
               <p id="rating-c1">0</p>
-          </div>
+            </div> */}
           </div>
         </Card>
       ))}
