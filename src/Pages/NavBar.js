@@ -1,18 +1,15 @@
 import React from "react";
-import logo from "../Imagens/logo.png"
+import logo from "../Imagens/logo-.png"
 import carrinho from "../Imagens/carrinho.svg";
 import usuario from "../Imagens/usuario.svg";
-import { Barra, BotaoBarra,Botao, Carrinho, Lista, Icons } from "./Style";
-// import { BarraPesquisa } from "./BarraPesquisa";
+import { Barra, BotaoBarra,Botao, Carrinho, Lista, Icons,Logo } from "./Style";
 
 export const NavBar = () => {
 
     return(
-        <>
-        
         <Barra>
             <BotaoBarra>
-                <Lista><a href="/"><img src={logo} alt="logo"/></a></Lista>
+                <Lista><a href="/"><Logo src={logo} alt="logo"/></a></Lista>
                 <Lista><Botao to= "/">Home</Botao></Lista>
                 <Lista><Botao to= "/sobre">Sobre</Botao></Lista>
                 <Lista><Botao to = "/contato">Contato</Botao></Lista>
@@ -25,7 +22,5 @@ export const NavBar = () => {
                     </Carrinho>
             </BotaoBarra>
         </Barra>
-        {/* <BarraPesquisa/> */}
-        </>
     )
 }
