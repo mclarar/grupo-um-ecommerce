@@ -4,39 +4,18 @@ import nintendo from './Imagens/nintendo-logo-.png'
 import xbox from './Imagens/xbox-logo.png'
 import { Consoles, BarraConsoles, ImgConsoles } from './Style'
 
-export const BarraPesquisa = () => {
-  return (
-    <BarraConsoles>
+export const BarraPesquisa = ()=>{
+    
+  return(
+      <BarraConsoles>
       <Consoles>
-        <li>
-        {/* usar link ou navigate ao invés de href */}
-          <a href="/">
-            <ImgConsoles
-              src={playstation}
-              style={{ paddingTop: '15px' }}
-              width="120px"
-              height="auto"
-            />
-          </a>
-        </li>
-        <li>
-           {/* usar link ou navigate ao invés de href */}
-          <a href="/">
-            <ImgConsoles
-              src={xbox}
-              style={{ paddingTop: '13px' }}
-              width="100px"
-              height="auto"
-            />
-          </a>
-        </li>
-        <li>
-           {/* usar link ou navigate ao invés de href */}
-          <a href="/">
-            <ImgConsoles src={nintendo} width="130px" height="auto" />
-          </a>
-        </li>
+          <li><a href="/" ><ImgConsoles  src={playstation} style={{paddingTop:"14px"}} /></a></li>
+
+          <li><a href="/"><ImgConsoles  src={xbox} style={{paddingBottom:"10px"}} /></a></li>
+          
+          <li><a href="/"><ImgConsoles src={nintendo} style={{paddingBottom:"10px"}}/></a></li>
+
       </Consoles>
-    </BarraConsoles>
-  )
+      </BarraConsoles>
+      )
 }
