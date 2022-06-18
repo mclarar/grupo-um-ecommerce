@@ -1,10 +1,21 @@
 import styled from "styled-components";
 import {  Link } from "react-router-dom";
+
+export const Fundo = styled.body`
+background-color:beige;
+`;
+
 export const Barra = styled.nav`
 margin: 0;
 border: 0;
 `;
 
+export const Logo = styled.img`
+width: 100px;
+height: auto;
+padding-left: 10px;
+padding-top: 10px;
+`;
 export const BotaoBarra = styled.ul`
 list-style-type: none;
 text-decoration: none;
@@ -19,9 +30,9 @@ text-overflow: ellipsis;
 text-decoration: none;
 display: block;
 color: black;
-padding: 1.7rem;
-font-size: 20px;
-font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+padding: 1.5rem;
+font-size: 22px;
+font-family:'Quantico', sans-serif;
 :hover{
     background-color: #9b9cdf;
     color: #5b5986;
@@ -42,8 +53,8 @@ width: 43px;
 height: 43px;
 padding: 5px;
 padding-top: 15px;
-
 `;
+
 export const BarraConsoles = styled.div`
 background-color: gray;
 
@@ -60,5 +71,24 @@ margin: 0;
 export const ImgConsoles = styled.img`
 padding-right: 80px;
 float: left;
+width: 100px; 
+height:auto;
+padding-top: 10px;
+
 
 `;
+export const Rodape = styled.footer`
+
+`;
+export const Desenvolvedores = styled.div`
+background-color: blueviolet;
+display: flex;
+justify-content: space-between;
+`;
+export const LogoRodape = styled.img`
+width: 100px;
+height: 80px;
+padding-right: 10px;
+`;
+
+

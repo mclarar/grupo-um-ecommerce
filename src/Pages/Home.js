@@ -1,3 +1,19 @@
+
+
+import React from "react";
+import { BarraPesquisa } from "./BarraPesquisa";
+import { Fundo } from "./Style";
+
+export const Home = () =>{
+
+    return(
+        <Fundo>
+        <BarraPesquisa/>
+        
+        </Fundo>
+    )
+}
+
 import React, { useEffect, useState } from "react";
 import { BarraPesquisa } from "../Components/BarraPesquisa/BarraPesquisa";
 import { buscarProdutos } from "../Service/api";
@@ -64,3 +80,4 @@ export const Home = () => {
     </>
   );
 };
+
