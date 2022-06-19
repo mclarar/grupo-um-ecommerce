@@ -2,6 +2,7 @@ import React from 'react'
 import playstation from './Imagens/playstation-logo.png'
 import nintendo from './Imagens/nintendo-logo-.png'
 import xbox from './Imagens/xbox-logo.png'
+import {InputGroupDemo} from '../Input/Input'
 import { Consoles, BarraConsoles, ImgConsoles } from './Style'
 
 export const BarraPesquisa = ()=>{
@@ -15,6 +16,7 @@ export const BarraPesquisa = ()=>{
           
           <li><a href="/"><ImgConsoles src={nintendo} style={{paddingBottom:"10px"}}/></a></li>
 
+      <InputGroupDemo/>
       </Consoles>
       </BarraConsoles>
       )

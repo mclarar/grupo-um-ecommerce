@@ -6,6 +6,7 @@ import { Cards } from "../Components/Cards/Cards";
 import { Fundo } from "../Components/BarraPesquisa/Style";
 
 
+
 export const Home = () => {
   const [produtos, setProdutos] = useState([
     // {
@@ -55,6 +56,7 @@ export const Home = () => {
     <>
     <Fundo>
       <BarraPesquisa />
+      
       <Cards lista={produtos} />
       {/* {produtos.map((produto, index) => {
         return (
