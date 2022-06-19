@@ -1,0 +1,14 @@
+
+.desenvolvedores{
+background-color: blueviolet;
+display: flex;
+justify-content: space-between;
+font-family:'Quantico', sans-serif;
+padding: auto;
+
+}
+img{
+width: 100px;
+height: 80px;
+padding-right: 10px;
+}

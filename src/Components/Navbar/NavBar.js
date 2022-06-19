@@ -1,4 +1,5 @@
 import {React} from 'react'
+import {  Link } from "react-router-dom";
 import logo from './Imagens/logo-.png'
 import carrinho from './Imagens/carrinho.svg'
 import usuario from './Imagens/usuario.svg'
@@ -8,9 +9,9 @@ import {
   Botao,
   Carrinho,
   Lista,
-  Icons
-} from '../BarraPesquisa/Style'
-// import { BarraPesquisa } from "./BarraPesquisa";
+  Icons,
+  Logo
+} from './StyleNavBar'
 
 export const NavBar = () => {
   return (
@@ -19,9 +20,7 @@ export const NavBar = () => {
         <BotaoBarra>
           <Lista>
              {/* usar link ou navigate ao invés de href */}
-            <a href="/">
-              <img src={logo} alt="logo" />
-            </a>
+              <Logo src={logo} alt="logo" />
           </Lista>
           <Lista>
             <Botao to="/">Home</Botao>
@@ -35,18 +34,17 @@ export const NavBar = () => {
           <Carrinho>
             <li>
                {/* usar link ou navigate ao invés de href */}
-              <a href="/">
+              <Link to={"/"}>
                 <Icons src={usuario} alt="usuario" />
-              </a>
+              </Link>
                {/* usar link ou navigate ao invés de href */}
-              <a href="/">
+              <Link to={"/"}>
                 <Icons src={carrinho} alt="carrinho" />
-              </a>
+              </Link>
             </li>
           </Carrinho>
         </BotaoBarra>
       </Barra>
-      {/* <BarraPesquisa/> */}
     </>
   )
 }

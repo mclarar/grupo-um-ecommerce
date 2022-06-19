@@ -1,5 +1,11 @@
 import React from "react";
 import { Fundo } from "../../Components/BarraPesquisa/Style";
+import amanda from "./Imagens/amanda.svg"
+import alexandre from "./Imagens/alexandre.svg"
+import angelica from "./Imagens/angelica.svg"
+import henrique from "./Imagens/henrique.svg"
+import maria from "./Imagens/mclara.svg"
+import roberta from "./Imagens/roberta.svg"
 import "./stylesobre.css";
 
 export const Sobre = () =>{
@@ -9,7 +15,7 @@ export const Sobre = () =>{
     <section class="container">
       <div class="pessoa">
         <div class="foto">
-          <img src="https://raw.githubusercontent.com/mclarar/trabalhoFinalFrontEnd/e49740571bf9b3feeea05a58d90795b3ba97753e/pg-%20sobre/assets/mclara.svg" alt="Desenvolvedora Maria Clara" />
+          <img src={maria} alt="Desenvolvedora Maria Clara" />
         </div>
         <div class="sobre">
           <p>
@@ -25,10 +31,9 @@ export const Sobre = () =>{
           </p>
         </div>
       </div>
-
       <div class="pessoa">
         <div class="foto">
-          <img src="https://raw.githubusercontent.com/mclarar/trabalhoFinalFrontEnd/e49740571bf9b3feeea05a58d90795b3ba97753e/pg-%20sobre/assets/roberta.svg" alt="Desenvolvedora Roberta" />
+          <img src={roberta} alt="Desenvolvedora Roberta" />
         </div>
         <div class="sobre">
           <p>
@@ -43,7 +48,7 @@ export const Sobre = () =>{
 
       <div class="pessoa">
         <div class="foto">
-          <img src="https://raw.githubusercontent.com/mclarar/trabalhoFinalFrontEnd/e49740571bf9b3feeea05a58d90795b3ba97753e/pg-%20sobre/assets/alexandre.svg" alt="Desenvolvedor Alexandre" />
+          <img src={alexandre} alt="Desenvolvedor Alexandre" />
         </div>
         <div class="sobre">
           <p>
@@ -62,21 +67,21 @@ export const Sobre = () =>{
 
       <div class="pessoa">
         <div class="foto">
-          <img src="https://raw.githubusercontent.com/mclarar/trabalhoFinalFrontEnd/e49740571bf9b3feeea05a58d90795b3ba97753e/pg-%20sobre/assets/angelica.svg" alt="Desenvolvedora Angelica" />
+          <img src={angelica} alt="Desenvolvedora Angelica" />
         </div>
         <div class="sobre">Olá, me chamo Angélica, tenho 32 anos, cursava direito e há 13 anos trabalhei com Assessoria Empresarial. Atualmente em desenvolvimento para a transição de carreira na area tecnológica. Disposta a novas oportunidades no mercado.</div>
       </div>
 
       <div class="pessoa">
         <div class="foto">
-          <img src="https://raw.githubusercontent.com/mclarar/trabalhoFinalFrontEnd/e49740571bf9b3feeea05a58d90795b3ba97753e/pg-%20sobre/assets/henrique.svg" alt="Desenvolvedor Henrique" />
+          <img src={henrique} alt="Desenvolvedor Henrique" />
         </div>
         <div class="sobre">Eu sou o Henrique Lutfi, tenho 28 anos, me formei em engenharia mecâninca em 2019 e atualmente estou me preparando para ingressar na area de programação.</div>
       </div>
 
       <div class="pessoa">
         <div class="foto">
-          <img src="https://raw.githubusercontent.com/mclarar/trabalhoFinalFrontEnd/e49740571bf9b3feeea05a58d90795b3ba97753e/pg-%20sobre/assets/amanda.svg" alt="Desenvolvedora Amanda" />
+          <img src={amanda} alt="Desenvolvedora Amanda" />
         </div>
         <div class="sobre">
           <p>
@@ -88,7 +93,7 @@ export const Sobre = () =>{
           </p>
         </div>
       </div>
-    </section>
+   </section>
         </Fundo>
     )
 }

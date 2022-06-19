@@ -9,9 +9,9 @@ export const BarraPesquisa = ()=>{
   return(
       <BarraConsoles>
       <Consoles>
-          <li><a href="/" ><ImgConsoles  src={playstation} style={{paddingTop:"14px"}} /></a></li>
+          <li><a href="/" ><ImgConsoles  src={playstation} style={{paddingLeft:"10px" ,paddingTop:"14px"}} /></a></li>
 
-          <li><a href="/"><ImgConsoles  src={xbox} style={{paddingBottom:"10px"}} /></a></li>
+          <li><a href="/"><ImgConsoles  src={xbox} style={{paddingTop:"10px"}} /></a></li>
           
           <li><a href="/"><ImgConsoles src={nintendo} style={{paddingBottom:"10px"}}/></a></li>
 

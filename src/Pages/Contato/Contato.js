@@ -4,6 +4,8 @@ import tel from './Imagens/tel.png'
 import email from './Imagens/email.png'
 import portfolio from './Imagens/portfolio.png'
 import "./stylecontato.css"
+import { IconsContato } from "./styleContato";
+// import { GMap } from 'primereact/gmap';
 
 export const Contato = () =>{
 
@@ -16,15 +18,15 @@ export const Contato = () =>{
           <div class="info">
             <div class="container-infos">
               <div class="telefone">
-                <img src={tel} alt="" />
+                <IconsContato src={tel} alt=""/>
                 <p>(24) 91234-4678</p>
               </div>
               <div class="contato">
-                <img src={email} alt="" />
+                <IconsContato src={email} alt="" />
                 <p>maniac@gmail.com</p>
               </div>
               <div class="trabalhe-conosco">
-                <img src={portfolio} alt="" />
+                <IconsContato src={portfolio} alt="" />
                 <p>trabalhe conosco</p>
               </div>
             </div>
@@ -46,6 +48,7 @@ export const Contato = () =>{
         </div>
       </div>
     </section>
+
         </Fundo>
     )
 }
