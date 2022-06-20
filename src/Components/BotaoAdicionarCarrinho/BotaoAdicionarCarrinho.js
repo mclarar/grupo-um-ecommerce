@@ -1,12 +1,24 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { CartContext } from "../../Contexts/CartContext";
 
-export const BotaoAdicionarCarrinho = (props) =>{
+export const BotaoAdicionarCarrinho = ({produto}) => {
+    // const [listaCarrinho, setListaCarrinho] = useState([]);
 
-    // postProdutos(produto)  =()=>{
-    //     const url = '/pedido'
-    //     return api.post(url, produto).then(res => res.data);
-    //   }
-    return(
-        <button>{props.id}</button>
-    )
-}
+    // function handleAdd() {
+    //   setListaCarrinho([...listaCarrinho, props.id]);
+    // }
+
+  const{ cart, addItem, removeItem, clearCart } = useContext(CartContext)
+
+  return (
+    <>
+      <button onClick={() => addItem(produto)}>{produto.valorUnitario}</button>
+      {/* <h1>{cart.valorUnitario}</h1> */}
+      {/* {listaCarrinho.map((justeta) => {
+        return <h1>{justeta.valorUnitario}</h1>;
+      })} */}
+    </>
+
+    // <h1>{listaCarrinho}</h1>
+  );
+};

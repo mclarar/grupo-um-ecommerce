@@ -1,18 +1,17 @@
 import React, { useState } from "react";
-import { CardContainer, Card, TopCard} from "./style";
-import "./Card.css"
-import "./funcoes"
+import { CardContainer, Card, TopCard } from "./style";
+import "./Card.css";
 import { BotaoAdicionarCarrinho } from "../BotaoAdicionarCarrinho/BotaoAdicionarCarrinho";
 
-
 export const Cards = (props) => {
+  const [star, setStar] = useState([
+    "https://github.com/HenriqueLutfi/SerratecFrontEnd/blob/main/trabalho%20final/home/assets/img/star0.png?raw=true",
+  ]);
 
-  const [star, setStar]= useState(["https://github.com/HenriqueLutfi/SerratecFrontEnd/blob/main/trabalho%20final/home/assets/img/star0.png?raw=true"]);
-
-  
-  function changeStar(id){
+  function changeStar(id) {
     // if(document.getElementById(id).src==="https://github.com/HenriqueLutfi/SerratecFrontEnd/blob/main/trabalho%20final/home/assets/img/star0.png?raw=true"){
-      document.getElementById(id).src = "https://github.com/HenriqueLutfi/SerratecFrontEnd/blob/main/trabalho%20final/home/assets/img/star1.png?raw=true";
+    document.getElementById(id).src =
+      "https://github.com/HenriqueLutfi/SerratecFrontEnd/blob/main/trabalho%20final/home/assets/img/star1.png?raw=true";
     // }else{
     //   document.getElementById(id).src = "https://github.com/HenriqueLutfi/SerratecFrontEnd/blob/main/trabalho%20final/home/assets/img/star0.png?raw=true";
     // }
@@ -23,12 +22,12 @@ export const Cards = (props) => {
       {props.lista.map((res) => (
         <Card>
           <TopCard>
-            <img className="topCardImage" src={res.nomeImagemProduto}/>
+            <img className="topCardImage" src={res.nomeImagemProduto} />
           </TopCard>
           <div className="bottom-card">
             <span>{res.nomeProduto}</span>
             <span>R${res.valorUnitario}</span>
-            <BotaoAdicionarCarrinho id={res.idProduto}></BotaoAdicionarCarrinho>
+            <BotaoAdicionarCarrinho produto={res}></BotaoAdicionarCarrinho>
 
             {/* <div class="star">
               <a href="javascript:void(0)" onClick="Avaliar(2,'s1-c1','s2-c1','s3-c1','s4-c1','s5-c1','rating-c1','c1')">
