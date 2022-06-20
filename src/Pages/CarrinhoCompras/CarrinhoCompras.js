@@ -20,10 +20,8 @@ export const CarrinhoCompras =()=> {
 
     <div>
       <Fundo>
-        {
-          console.log(cart)
-        }
         <BarraPesquisa/>
+        <h1>{cart}</h1>
         
       </Fundo>
     </div>

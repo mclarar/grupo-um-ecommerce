@@ -21,6 +21,11 @@ export const buscarItemPedido =()=>{
   return api.get(url,{headers:{"Access-Control-Allow-Origin": "*"}})
 }
 
+export const buscarCliente =()=>{
+  const url = '/cliente'
+  return api.get(url,{headers:{"Access-Control-Allow-Origin": "*"}})
+}
+
 
 
 
