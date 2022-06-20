@@ -1,18 +1,21 @@
-import React, { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { Button } from 'primereact/button'
-import { Password } from 'primereact/password'
-import { Divider } from 'primereact/divider'
-import { InputText } from 'primereact/inputtext'
-import './PasswordDemo.css'
-import './ButtonDemo.css'
-import './style.css'
-import { buscarCliente } from '../../Service/api'
+import React, { useState, useEffect, useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import { Button } from "primereact/button";
+import { Password } from "primereact/password";
+import { Divider } from "primereact/divider";
+import { InputText } from "primereact/inputtext";
+import "./PasswordDemo.css";
+import "./ButtonDemo.css";
+import "./style.css";
+import { buscarCliente } from "../../Service/api";
+
 export const LoginPage = () => {
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const [clientes, setClientes] = useState([])
-  const navigate = useNavigate()
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [clientes, setClientes] = useState([]);
+  
+  const navigate = useNavigate();
+
 
   useEffect(() => {
     buscarClientesApi();
@@ -29,26 +32,28 @@ export const LoginPage = () => {
       });
   }
 
-  const handleSubmit = e => {
-    e.preventDefault()
-    console.log('submit', { email, password })
-    clientes.forEach(element => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("submit", { email, password });
+    clientes.forEach((element) => {
       if (email === element.email) {
         if (password === element.telefone) {
-          localStorage.setItem('logado', 'sim')
-          navigate('/')
-          document.location.reload()
+          localStorage.setItem("logado", "sim");
+          navigate("/");
+          setUsario(element);
+          console.log(cliente)
+          document.location.reload();
         }
       }
     });
-    if (email === 'cliente01@gmail.com') {
-      if (password === '123456') {
-        localStorage.setItem('logado', 'sim')
-        navigate('/')
-        document.location.reload()
+    if (email === "cliente01@gmail.com") {
+      if (password === "123456") {
+        localStorage.setItem("logado", "adm");
+        navigate("/");
+        document.location.reload();
       }
     }
-  }
+  };
 
   return (
     <>
@@ -60,20 +65,20 @@ export const LoginPage = () => {
             <InputText
               id="username"
               value={email}
-              onChange={e => setEmail(e.target.value)}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="field">
             <label htmlFor="password">senha</label>
             <Password
               value={password}
-              onChange={e => setPassword(e.target.value)}
+              onChange={(e) => setPassword(e.target.value)}
               toggleMask
             />
           </div>
           <div className="actions">
             <Button
-              onClick={e => handleSubmit(e)}
+              onClick={(e) => handleSubmit(e)}
               label="Login"
               className="p-button-rounded p-button-help"
             />
@@ -81,7 +86,7 @@ export const LoginPage = () => {
         </form>
       </div>
     </>
-  )
+  );
 
   //   <input
   //               type="email"
@@ -90,4 +95,4 @@ export const LoginPage = () => {
   //               value={email}
   //               onChange={e => setEmail(e.target.value)}
   //             />
-}
+};

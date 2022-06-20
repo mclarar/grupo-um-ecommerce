@@ -4,6 +4,7 @@ import { buscarProdutos } from "../Service/api";
 import { Cards } from "../Components/Cards/Cards";
 import { Fundo } from "../Components/BarraPesquisa/Style";
 import { CartContext } from "../Contexts/CartContext";
+import axios from "axios";
 
 export const Home = () => {
   const [produtos, setProdutos] = useState([
@@ -36,23 +37,54 @@ export const Home = () => {
     // },
   ]);
 
-
+  // const { cart, addItem, removeItem, clearCart } = useContext(CartContext);
 
   useEffect(() => {
     buscarProdutosApi();
   }, []);
 
-  function buscarProdutosApi() {
-    buscarProdutos("produto")
-      .then((res) => {
-        setProdutos(res.data);
-        console.log(res);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }
+  // function buscarProdutosApi() {
+  //   buscarProdutos("produto")
+  //     .then((res) => {
+  //       setProdutos(res.data);
+  //       console.log(res);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }
 
+  // function jsonProduto() {
+    
+  //   let daa = {
+  //     produto: {
+  //       idProduto: cart[0].idProduto,
+  //     },
+  //     quantidade: 1,
+  //     precoVenda: cart[0].valorUnitario,
+  //     percentualDesconto: 0.1,
+  //   };
+  //   cart.forEach(element => {
+  //     daa={
+  //     produto: {
+  //       idProduto: cart[0].idProduto,
+  //     },
+  //     quantidade: 1,
+  //     precoVenda: cart[0].valorUnitario,
+  //     percentualDesconto: 0.1,
+  //   };
+  //   });
+  //   teste(daa)
+  // }
+
+  // function teste(daa) {
+  //   let haha = {
+  //     idCliente: 1,
+  //     itemPedidoList: [daa],
+  //   };
+  //   console.log(haha);
+  //   axios.post("http://localhost:8080/ecommerce/pedido", haha);
+  // }
 
   return (
     <>
@@ -60,7 +92,7 @@ export const Home = () => {
         <BarraPesquisa />
 
         <Cards lista={produtos} />
-
+        {/* <button onClick={() => jsonProduto()}>dasda</button> */}
         {/* {produtos.map((produto, index) => {
         return (
           <>
