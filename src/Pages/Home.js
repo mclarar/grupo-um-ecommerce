@@ -1,29 +1,28 @@
-import React, { useEffect, useState, useContext } from "react";
-import { BarraPesquisa } from "../Components/BarraPesquisa/BarraPesquisa";
-import { buscarProdutos } from "../Service/api";
-import { Cards } from "../Components/Cards/Cards";
-import { Fundo } from "../Components/BarraPesquisa/Style";
-import { CartContext } from "../Contexts/CartContext";
-import axios from "axios";
+import React, { useEffect, useState, useContext } from 'react'
+import { BarraPesquisa } from '../Components/BarraPesquisa/BarraPesquisa'
+import { buscarProdutos } from '../Service/api'
+import { Cards } from '../Components/Cards/Cards'
+import { Fundo } from '../Components/BarraPesquisa/Style'
+import { CartContext } from '../Contexts/CartContext'
+import axios from 'axios'
 
 export const Home = () => {
-  const [produtos, setProdutos] = useState([]);
+  const [produtos, setProdutos] = useState([])
 
   useEffect(() => {
-    buscarProdutosApi();
-  }, []);
+    buscarProdutosApi()
+  }, [])
 
   function buscarProdutosApi() {
-    buscarProdutos("produto")
-      .then((res) => {
-        setProdutos(res.data);
-        console.log(res);
+    buscarProdutos('produto')
+      .then(res => {
+        setProdutos(res.data)
+        console.log(res)
       })
-      .catch((err) => {
-        console.log(err);
-      });
+      .catch(err => {
+        console.log(err)
+      })
   }
-
 
   return (
     <>
@@ -33,5 +32,5 @@ export const Home = () => {
         <Cards lista={produtos} />
       </Fundo>
     </>
-  );
-};
+  )
+}
