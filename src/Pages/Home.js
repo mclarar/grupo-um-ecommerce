@@ -37,23 +37,24 @@ export const Home = () => {
     // },
   ]);
 
+  //teste
   // const { cart, addItem, removeItem, clearCart } = useContext(CartContext);
 
   useEffect(() => {
     buscarProdutosApi();
   }, []);
 
-  // function buscarProdutosApi() {
-  //   buscarProdutos("produto")
-  //     .then((res) => {
-  //       setProdutos(res.data);
-  //       console.log(res);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // }
-
+  function buscarProdutosApi() {
+    buscarProdutos("produto")
+      .then((res) => {
+        setProdutos(res.data);
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+//teste
   // function jsonProduto() {
     
   //   let daa = {
@@ -92,6 +93,7 @@ export const Home = () => {
         <BarraPesquisa />
 
         <Cards lista={produtos} />
+        {/* teste */}
         {/* <button onClick={() => jsonProduto()}>dasda</button> */}
         {/* {produtos.map((produto, index) => {
         return (

@@ -40,8 +40,8 @@ export const LoginPage = () => {
         if (password === element.telefone) {
           localStorage.setItem("logado", "sim");
           navigate("/");
-          setUsario(element);
-          console.log(cliente)
+          //setUsario(element);
+          //console.log(cliente)
           document.location.reload();
         }
       }

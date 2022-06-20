@@ -26,6 +26,11 @@ export const buscarCliente =()=>{
   return api.get(url,{headers:{"Access-Control-Allow-Origin": "*"}})
 }
 
+export const CriarPedido =()=>{
+  const url = '/pedido'
+  return api.post(url,{headers:{"Access-Control-Allow-Origin": "*"}})
+}
+
 
 
 
