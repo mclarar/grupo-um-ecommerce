@@ -25,24 +25,9 @@ export const buscarItemPedido = () => {
   return api.get(url, { headers: { 'Access-Control-Allow-Origin': '*' } })
 }
 
-export const addProduto = (
-  nomeProduto,
-  descricaoProduto,
-  qtdEstoque,
-  valorUnitario,
-  idCategoria
-) => {
+export const addProduto = produto => {
   const url = '/produto'
-  return api.post(
-    url,
-    {
-      nomeProduto: nomeProduto,
-      descricaoProduto: descricaoProduto,
-      qtdEstoque: qtdEstoque,
-      valorUnitario: valorUnitario,
-      idCategoria: idCategoria
-    },
-
-    { headers: { 'Access-Control-Allow-Origin': '*' } }
-  )
+  return api.post(url, produto, {
+    headers: { 'Access-Control-Allow-Origin': '*' }
+  })
 }

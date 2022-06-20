@@ -8,6 +8,7 @@ import { NotFound } from '../Pages/NotFound'
 import { Footer } from '../Components/Footer/Footer'
 import { LoginPage } from '../Pages/LoginPage/LoginPage'
 import { CarrinhoCompras } from '../Pages/CarrinhoCompras/CarrinhoCompras'
+import { Adm } from '../Pages/Adm/Adm'
 
 export const Root = () => {
   const [logado, setLogado] = useState()
@@ -26,6 +27,7 @@ export const Root = () => {
             <Route path="/sobre" element={<Sobre />} />
             <Route path="/contato" element={<Contato />} />
             <Route path="/carrinho" element={<CarrinhoCompras />} />
+            <Route path="/Adm" element={<Adm />} />
           </>
         )}
         <Route path="/" element={<LoginPage />} />

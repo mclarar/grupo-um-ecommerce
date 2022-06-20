@@ -1,15 +1,13 @@
 import React from 'react'
 import { addProduto } from '../../Service/api'
+import { useState } from 'react'
 
 export const Adm = () => {
-  const adcProduto = () => {
-    addProduto(
-      nomeProduto,
-      descricaoProduto,
-      qtdEstoque,
-      valorUnitario,
-      idCategoria
-    )
+  const [nomeProduto, setnomeProduto] = useState('')
+  const [descricaoProduto, setdescricaoProduto] = useState('')
+
+  const adcProduto = produto => {
+    addProduto(produto)
       .then(res => {
         setProdutos(res.data)
         console.log(res)
@@ -19,5 +17,9 @@ export const Adm = () => {
       })
   }
 
-  return <div>adm</div>
+  return (
+    <div>
+      <InputText value={value1} onChange={e => setValue1(e.target.value)} />
+    </div>
+  )
 }
