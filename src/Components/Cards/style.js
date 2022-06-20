@@ -36,12 +36,13 @@ export const Card = styled.div`
   }
 `;
 
-export const topCard = styled.div`
-  width: 100%;
-  height: 60%;
+export const TopCard = styled.div`
+  width: 50%;
+  height: 50%;
   display: flex;
   align-items: center;
 `;
+
 export const topCardImage = styled.img`
   width: 100%;
   height: 100%;

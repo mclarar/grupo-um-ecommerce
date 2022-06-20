@@ -5,24 +5,25 @@ import { CartContext } from '../../Contexts/CartContext'
 
 export const CarrinhoCompras =()=> {
 
-  let item = useContext(CartContext).addItem
-  item({
-      "nome":"The Last of Us",
-      "preco":199.90,
-      "quantidade":1,
-      "categoria":"playstation"
-  })
-  const [carrinho, setCarrinho] = useState(useContext(CartContext).cart) 
-  console.log(carrinho)
-  
+  // let item = useContext(CartContext).addItem
+  // item({
+  //     "nome":"The Last of Us",
+  //     "preco":199.90,
+  //     "quantidade":1,
+  //     "categoria":"playstation"
+  // })
+  // const [carrinho, setCarrinho] = useState(useContext(CartContext).cart) 
+  // console.log(carrinho)
+  const{ cart, addItem, removeItem, clearCart } = useContext(CartContext)
 
   return (
 
     <div>
       <Fundo>
+        {
+          console.log(cart)
+        }
         <BarraPesquisa/>
-
-        <h1>{carrinho.nome}</h1>
         
       </Fundo>
     </div>

@@ -1,11 +1,9 @@
-
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { BarraPesquisa } from "../Components/BarraPesquisa/BarraPesquisa";
 import { buscarProdutos } from "../Service/api";
 import { Cards } from "../Components/Cards/Cards";
 import { Fundo } from "../Components/BarraPesquisa/Style";
-
-
+import { CartContext } from "../Contexts/CartContext";
 
 export const Home = () => {
   const [produtos, setProdutos] = useState([
@@ -38,13 +36,15 @@ export const Home = () => {
     // },
   ]);
 
+
   useEffect(() => {
     buscarProdutosApi();
-  });
+  }, []);
+
   function buscarProdutosApi() {
     buscarProdutos("produto")
       .then((res) => {
-        setProdutos(res.data)
+        setProdutos(res.data);
         console.log(res);
       })
       .catch((err) => {
@@ -52,13 +52,15 @@ export const Home = () => {
       });
   }
 
+
   return (
     <>
-    <Fundo>
-      <BarraPesquisa />
-      
-      <Cards lista={produtos} />
-      {/* {produtos.map((produto, index) => {
+      <Fundo>
+        <BarraPesquisa />
+
+        <Cards lista={produtos} />
+
+        {/* {produtos.map((produto, index) => {
         return (
           <>
             <p>{produto.nomeProduto}</p>
@@ -68,9 +70,8 @@ export const Home = () => {
         );
       })} */}
 
-    {/* <h1 onClick={()=>(item)}>{carrinho.nome}</h1> */}
+        {/* <h1 onClick={()=>(item)}>{carrinho.nome}</h1> */}
       </Fundo>
     </>
   );
 };
-
