@@ -1,10 +1,12 @@
 import {Root} from "./Routes/Root"
+import { CartProvider } from "./Contexts/CartContext";
 
 function App() {
   return (
-    <div >
+    <CartProvider>
       <Root/>
-    </div>
+    </CartProvider>
+    
   );
 }
 
