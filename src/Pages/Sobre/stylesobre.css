@@ -12,7 +12,7 @@ h1{
     flex-direction: column;
   }
   
-  h1 {
+  .titulo {
     color: aliceblue;
     background-color: rgb(156, 23, 218);
     margin: 0%;

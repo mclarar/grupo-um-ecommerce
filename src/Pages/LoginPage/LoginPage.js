@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "primereact/button";
@@ -8,6 +9,7 @@ import "./PasswordDemo.css";
 import "./ButtonDemo.css";
 import "./style.css";
 import { buscarCliente } from "../../Service/api";
+
 
 export const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -58,27 +60,33 @@ export const LoginPage = () => {
   return (
     <>
       <div id="login">
-        <h1 className="title">Login do sistema</h1>
         <form className="form" onSubmit={handleSubmit}>
           <div className="field">
+            <h1>Faça seu login</h1>
+            <br />
             <label htmlFor="email">Email</label>
             <InputText
+              style={{ width: 250 }}
+              className="username"
               id="username"
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={e => setEmail(e.target.value)}
             />
           </div>
           <div className="field">
-            <label htmlFor="password">senha</label>
+            <label htmlFor="password">Senha</label>
             <Password
+              inputStyle={{ width: 250 }}
               value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              onChange={e => setPassword(e.target.value)}
               toggleMask
+              feedback={false}
             />
           </div>
           <div className="actions">
             <Button
-              onClick={(e) => handleSubmit(e)}
+              style={{ backgroundColor: ' #5A198D' }}
+              onClick={e => handleSubmit(e)}
               label="Login"
               className="p-button-rounded p-button-help"
             />
@@ -86,13 +94,5 @@ export const LoginPage = () => {
         </form>
       </div>
     </>
-  );
-
-  //   <input
-  //               type="email"
-  //               name="email"
-  //               id="email"
-  //               value={email}
-  //               onChange={e => setEmail(e.target.value)}
-  //             />
-};
+  )
+}
