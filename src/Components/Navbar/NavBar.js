@@ -40,7 +40,7 @@ export const NavBar = () => {
                 <Icons src={usuario} alt="usuario" />
               </a>
                {/* usar link ou navigate ao invés de href */}
-              <a href="/">
+              <a href="/carrinho">
                 <Icons src={carrinho} alt="carrinho" />
               </a>
             </li>
