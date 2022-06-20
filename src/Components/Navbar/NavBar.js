@@ -2,6 +2,7 @@ import {React} from 'react'
 import logo from './Imagens/logo-.png'
 import carrinho from './Imagens/carrinho.svg'
 import usuario from './Imagens/usuario.svg'
+
 import {
   Barra,
   BotaoBarra,
@@ -46,6 +47,7 @@ export const NavBar = () => {
           </Carrinho>
         </BotaoBarra>
       </Barra>
+      {/* <img src="https://www.sageworld.com/blog/wp-content/uploads/2018/06/Gamer-Promo-Products_Header_Option-2-710x263.jpg" className='imgHeader'></img> */}
       {/* <BarraPesquisa/> */}
     </>
   )

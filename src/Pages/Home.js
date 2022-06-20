@@ -67,6 +67,8 @@ export const Home = () => {
           </>
         );
       })} */}
+
+    {/* <h1 onClick={()=>(item)}>{carrinho.nome}</h1> */}
       </Fundo>
     </>
   );
