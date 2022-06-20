@@ -9,7 +9,7 @@ export const buscarProdutos = token => {
 
   return api.get(url, {
     headers: {
-      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Origin': '',
       Authorization: 'Bearer ' + token
     }
   })
@@ -17,17 +17,42 @@ export const buscarProdutos = token => {
 
 export const buscarPedido = () => {
   const url = '/pedido'
-  return api.get(url, { headers: { 'Access-Control-Allow-Origin': '*' } })
+  return api.get(url, { headers: { 'Access-Control-Allow-Origin': '' } })
 }
 
 export const buscarItemPedido = () => {
   const url = '/itemPedido'
-  return api.get(url, { headers: { 'Access-Control-Allow-Origin': '*' } })
+  return api.get(url, { headers: { 'Access-Control-Allow-Origin': '' } })
 }
 
-export const addProduto = produto => {
+export const buscarCliente = () => {
+  const url = '/cliente'
+  return api.get(url, { headers: { 'Access-Control-Allow-Origin': '' } })
+}
+
+export const CriarPedido = () => {
+  const url = '/pedido'
+  return api.post(url, { headers: { 'Access-Control-Allow-Origin': '' } })
+}
+
+export const addProduto = (
+  nomeProduto,
+  descricaoProduto,
+  qtdEstoque,
+  valorUnitario,
+  idCategoria
+) => {
   const url = '/produto'
-  return api.post(url, produto, {
-    headers: { 'Access-Control-Allow-Origin': '*' }
-  })
+  return api.post(
+    url,
+    {
+      nomeProduto: nomeProduto,
+      descricaoProduto: descricaoProduto,
+      qtdEstoque: qtdEstoque,
+      valorUnitario: valorUnitario,
+      idCategoria: idCategoria
+    },
+
+    { headers: { 'Access-Control-Allow-Origin': '' } }
+  )
 }

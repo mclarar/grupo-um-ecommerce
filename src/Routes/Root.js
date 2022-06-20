@@ -30,6 +30,7 @@ export const Root = () => {
             <Route path="/Adm" element={<Adm />} />
           </>
         )}
+        
         <Route path="/" element={<LoginPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
