@@ -28,6 +28,7 @@ export const Root = () => {
             <Route path="/carrinho" element={<CarrinhoCompras />} />
           </>
         )}
+        
         <Route path="/" element={<LoginPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

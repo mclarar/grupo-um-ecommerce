@@ -25,6 +25,21 @@ export const buscarItemPedido = () => {
   return api.get(url, { headers: { 'Access-Control-Allow-Origin': '*' } })
 }
 
+
+export const buscarCliente =()=>{
+  const url = '/cliente'
+  return api.get(url,{headers:{"Access-Control-Allow-Origin": "*"}})
+}
+
+export const CriarPedido =()=>{
+  const url = '/pedido'
+  return api.post(url,{headers:{"Access-Control-Allow-Origin": "*"}})
+}
+
+
+
+
+
 export const addProduto = (
   nomeProduto,
   descricaoProduto,
@@ -46,3 +61,4 @@ export const addProduto = (
     { headers: { 'Access-Control-Allow-Origin': '*' } }
   )
 }
+
