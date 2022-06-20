@@ -1,4 +1,4 @@
-import {React} from 'react'
+import { React } from 'react'
 import logo from './Imagens/logo-.png'
 import carrinho from './Imagens/carrinho.svg'
 import usuario from './Imagens/usuario.svg'
@@ -11,15 +11,17 @@ import {
   Lista,
   Icons
 } from '../BarraPesquisa/Style'
+import { Link, useNavigate } from 'react-router-dom'
 // import { BarraPesquisa } from "./BarraPesquisa";
 
 export const NavBar = () => {
+  const navigate = useNavigate()
   return (
     <>
       <Barra>
         <BotaoBarra>
           <Lista>
-             {/* usar link ou navigate ao invés de href */}
+            {/* usar link ou navigate ao invés de href */}
             <a href="/">
               <img src={logo} alt="logo" />
             </a>
@@ -35,14 +37,16 @@ export const NavBar = () => {
           </Lista>
           <Carrinho>
             <li>
-               {/* usar link ou navigate ao invés de href */}
               <a href="/">
                 <Icons src={usuario} alt="usuario" />
               </a>
-               {/* usar link ou navigate ao invés de href */}
-              <a href="/carrinho">
-                <Icons src={carrinho} alt="carrinho" />
-              </a>
+              {/* usar link ou navigate ao invés de href */}
+
+              <Icons
+                onClick={() => navigate('/carrinho')}
+                src={carrinho}
+                alt="carrinho"
+              />
             </li>
           </Carrinho>
         </BotaoBarra>

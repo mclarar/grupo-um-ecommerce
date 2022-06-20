@@ -5,6 +5,7 @@
   justify-content: center;
   min-height: 100vh;
   padding: 0 2rem;
+ background-color: #e4e4e4;
 }
 
 #login .form {
@@ -13,6 +14,8 @@
   max-width: 380px;
   height: 60vh;
   padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow:10px 5px 5px  rgb(171, 144, 177);
 }
 
 #login .field {
@@ -32,7 +35,7 @@
   margin-top: 0.5rem;
 }
 
-#username input{
-  width: 15rem;
+.username{
+  width: 50rem;
 }
 
