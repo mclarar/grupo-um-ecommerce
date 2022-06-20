@@ -27,15 +27,15 @@ export const Adm = () => {
 
   const handleSubmitProduto = e => {
     e.preventDefault()
-    // let prod = {
-    //   nomeProduto: 'controle ps3',
-    //   descricaoProduto: 'controle para ps3',
-    //   qtdEstoque: 3123123,
-    //   valorUnitario: 313,
-    //   idCategoria: 1,
-    //   nomeImagemProduto:
-    //     'https://m.media-amazon.com/images/I/31Cf5Iz4XOS._AC_.jpg'
-    // }
+    let prod = {
+      nomeProduto: nomeProduto,
+      descricaoProduto: descricaoProduto,
+      qtdEstoque: qtdEstoque,
+      valorUnitario: valorUnitario,
+      idCategoria: idCategoria,
+      nomeImagemProduto:
+        'https://m.media-amazon.com/images/I/31Cf5Iz4XOS._AC_.jpg'
+    }
 
     console.log('submit', {
       nomeProduto,
@@ -45,7 +45,7 @@ export const Adm = () => {
       idCategoria
     })
 
-    // axios.post('http://localhost:8080/ecommerce/produto')
+    axios.post('http://localhost:8080/ecommerce/produto',prod)
   }
   return (
     <div id="cadastroProd">
