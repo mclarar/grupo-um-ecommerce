@@ -1,23 +1,22 @@
-import React from "react";
-import { Rodape,Desenvolvedores,LogoRodape } from "../BarraPesquisa/Style";
+import React from 'react'
 import logo from './Imagens/logo-.png'
+import './style.css'
 
 export const Footer = () => {
-
-    return(
-        <Rodape>
-            <Desenvolvedores>
-        <p>
-          <strong>
-            Desenvolvedores: Alexandre | Amanda | Angelica | Henrique | Maria
-            Clara | Roberta <br />
-            Residência em TIC Software Serratec 2022.1 - Turma 01
-          </strong>
-        </p>
-        <LogoRodape src={logo} alt="logo do site"/>
-       </Desenvolvedores> 
-      </Rodape>
-
-     
-    )
+  return (
+    <>
+      <footer>
+        <div className="desenvolvedores">
+          <p>
+            <strong>
+              Desenvolvedores: Alexandre | Amanda | Angelica | Henrique | Maria
+              Clara | Roberta <br />
+              Residência em TIC Software Serratec 2022.1 - Turma 01
+            </strong>
+          </p>
+          <img src={logo} alt="logo do site" />
+        </div>
+      </footer>
+    </>
+  )
 }
