@@ -75,6 +75,10 @@
     /* background-color: chartreuse; */
     
   }
+
+  .field .username{
+    height: 70%;
+  }
   
   img{
     width: 20px;
@@ -153,6 +157,11 @@
     margin-top: 0.5rem;
     align-items: center;
   }
+
+  .inputext{
+    width: 100%;
+  }
+
   
   /* @media (max-width: 393px) {
 
