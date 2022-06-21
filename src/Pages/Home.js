@@ -28,7 +28,6 @@ export const Home = () => {
     <>
       <Fundo>
         <BarraPesquisa />
-
         <Cards lista={produtos} />
       </Fundo>
     </>

@@ -28,20 +28,6 @@ export const Cards = (props) => {
             <span>{res.nomeProduto}</span>
             <span>R${res.valorUnitario}</span>
             <BotaoAdicionarCarrinho produto={res}></BotaoAdicionarCarrinho>
-
-            {/* <div class="star">
-              <a href="javascript:void(0)" onClick="Avaliar(2,'s1-c1','s2-c1','s3-c1','s4-c1','s5-c1','rating-c1','c1')">
-                <img src={star} id="s1" /></a>
-              <a href="javascript:void(0)" onClick="Avaliar(2,'s1-c1','s2-c1','s3-c1','s4-c1','s5-c1','rating-c1','c1')">
-                <img src={star} id="s2" /></a>
-              <a href="javascript:void(0)" onClick="Avaliar(3,'s1-c1','s2-c1','s3-c1','s4-c1','s5-c1','rating-c1','c1')">
-                <img src={star} id="s3" /></a>
-              <a href="javascript:void(0)" onClick="Avaliar(4,'s1-c1','s2-c1','s3-c1','s4-c1','s5-c1','rating-c1','c1')">
-                <img src={star} id="s4" /></a>
-              <a href="javascript:void(0)" onClick="Avaliar(5,'s1-c1','s2-c1','s3-c1','s4-c1','s5-c1','rating-c1','c1')">
-                <img src={star} id="s5" /></a>
-              <p id="rating-c1">0</p>
-            </div> */}
           </div>
         </Card>
       ))}

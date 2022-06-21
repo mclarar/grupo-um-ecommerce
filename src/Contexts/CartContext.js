@@ -1,11 +1,10 @@
 import React from "react";
-import { Children, createContext } from "react"
+import { Children, createContext } from "react";
 import { useState } from "react";
 
-export const CartContext = createContext()
-export const CartProvider = ({children})=>{
-
-  const [cart, setCart] = useState([])
+export const CartContext = createContext();
+export const CartProvider = ({ children }) => {
+  const [cart, setCart] = useState([]);
 
   function addItem(item) {
     const aux = cart;
@@ -15,8 +14,13 @@ export const CartProvider = ({children})=>{
   }
 
   function removeItem(id) {
-    const filteredCart = cart.filter((item) => item.id !== id);
-    setCart(filteredCart);
+    // const filteredCart = cart.filter((item) => item.id !== id);
+    // setCart(filteredCart);
+    for (var i = 0; i < cart.length; i++) {
+      if (cart[i] === id) {
+        cart.splice(i, 1);
+      }
+    }
     console.log(cart);
   }
 
@@ -30,4 +34,4 @@ export const CartProvider = ({children})=>{
       {children}
     </CartContext.Provider>
   );
-}
+};
