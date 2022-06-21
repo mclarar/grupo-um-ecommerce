@@ -45,9 +45,12 @@ export const NavBar = () => {
           </Lista>
           <Carrinho>
             <li>
-              <a href="/">
-                <Icons src={usuario} alt="usuario" />
-              </a>
+              <Icons
+                onClick={() => navigate('/')}
+                src={usuario}
+                alt="usuario"
+              />
+
               {/* usar link ou navigate ao invés de href */}
 
               <Icons
