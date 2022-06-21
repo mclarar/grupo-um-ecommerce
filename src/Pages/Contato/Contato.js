@@ -75,6 +75,7 @@ export const Contato = () => {
                 <div className="field">
                   <label htmlFor="text">Digite sua mensagem</label>
                   <InputTextarea
+                    className="inputext"
                     style={{ width: 500 }}
                     value={texto}
                     onChange={e => setTexto(e.target.value)}

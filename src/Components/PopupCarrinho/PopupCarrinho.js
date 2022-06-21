@@ -6,7 +6,6 @@ export const PopupCarrinho = () => {
     <div>
       <output className="snackbar">
         <span className="content">Adicionado ao carrinho!</span>
-        <button className="action">Desfazer</button>
       </output>
     </div>
   )

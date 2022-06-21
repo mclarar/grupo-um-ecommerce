@@ -6,7 +6,6 @@ import { Fundo } from '../Components/BarraPesquisa/Style'
 import { CartContext } from '../Contexts/CartContext'
 import axios from 'axios'
 import { QtdadeItensCarrinho } from '../Components/QtdadeItensCarrinho/QtdadeItensCarrinho'
-import './home.css'
 
 export const Home = () => {
   const [produtos, setProdutos] = useState([])

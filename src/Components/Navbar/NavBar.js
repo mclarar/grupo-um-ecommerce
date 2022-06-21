@@ -2,6 +2,7 @@ import { React } from 'react'
 import logo from './Imagens/logo-.png'
 import carrinho from './Imagens/carrinho.svg'
 import usuario from './Imagens/usuario.svg'
+
 // import manete from './Imagens/manete.jpg';
 
 import {

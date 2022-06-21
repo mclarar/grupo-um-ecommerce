@@ -154,5 +154,29 @@
     align-items: center;
   }
   
+  /* @media (max-width: 393px) {
+
+    #contatoform .form {
+      background-color: #f1f1f1;
+      width: 100%;
+      max-width: 200px;
+      height: 65vh;
+      padding: 0.5rem;
+      border-radius: 10px;
+      box-shadow:10px 5px 5px  rgb(171, 144, 177);
+     
+      
+    }
+    #contatoform .field .inputext{
+      width: 30%;
+    }
+
+    #contatoform .field {
+      width: 40%;
+     
+    }
+  
+    
+  } */
  
   
