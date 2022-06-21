@@ -30,7 +30,6 @@ export const Home = () => {
       <Fundo>
         <BarraPesquisa />
 
-        <QtdadeItensCarrinho />
         <Cards lista={produtos} />
       </Fundo>
     </>
