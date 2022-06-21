@@ -1,13 +1,24 @@
 import styled from 'styled-components'
 
 export const CardCarrinhoContainer = styled.div`
+  padding: 5rem;
+  padding-bottom:1rem;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  /* grid-gap: 0.4rem 0.4rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr; */
+  display: grid;
+  grid-gap: 0.4rem 0.4rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
   justify-content: space-evenly;
+  @media only screen and (max-width: 1000px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media only screen and (max-width: 700px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media only screen and (max-width: 540px) {
+    grid-template-columns: 1fr ;
+  }
 `
 
 export const CardCarrinho = styled.div`
@@ -17,7 +28,7 @@ export const CardCarrinho = styled.div`
   align-items: center;
   text-align: center;
   border-radius: 0.5rem;
-  width: 20%;
+  width: 90%;
   height: 18rem;
   box-shadow: 2px 3px 30px 2px white;
   margin: auto;
