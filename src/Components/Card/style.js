@@ -33,6 +33,7 @@ export const CardStyle = styled.div`
     background-color: #d1cbcb;
     color: #fff;
     transform: scale(1.05);
+    transition: 0.3s;
     cursor: pointer;
   }
 `

@@ -1,17 +1,19 @@
-import React, { useState } from "react";
-import { CardContainer, Card, TopCard } from "./style";
-import "./Card.css";
-import { BotaoAdicionarCarrinho } from "../BotaoAdicionarCarrinho/BotaoAdicionarCarrinho";
+import React, { useState } from 'react'
+import { CardContainer } from './style'
+import { Card } from '../Card/Card'
+import './Card.css'
 
-export const Cards = (props) => {
+export const Cards = props => {
   const [star, setStar] = useState([
-    "https://github.com/HenriqueLutfi/SerratecFrontEnd/blob/main/trabalho%20final/home/assets/img/star0.png?raw=true",
-  ]);
+    'https://github.com/HenriqueLutfi/SerratecFrontEnd/blob/main/trabalho%20final/home/assets/img/star0.png?raw=true'
+  ])
+
+  const [popUp, setPopUp] = useState(false)
 
   function changeStar(id) {
     // if(document.getElementById(id).src==="https://github.com/HenriqueLutfi/SerratecFrontEnd/blob/main/trabalho%20final/home/assets/img/star0.png?raw=true"){
     document.getElementById(id).src =
-      "https://github.com/HenriqueLutfi/SerratecFrontEnd/blob/main/trabalho%20final/home/assets/img/star1.png?raw=true";
+      'https://github.com/HenriqueLutfi/SerratecFrontEnd/blob/main/trabalho%20final/home/assets/img/star1.png?raw=true'
     // }else{
     //   document.getElementById(id).src = "https://github.com/HenriqueLutfi/SerratecFrontEnd/blob/main/trabalho%20final/home/assets/img/star0.png?raw=true";
     // }
@@ -19,18 +21,9 @@ export const Cards = (props) => {
 
   return (
     <CardContainer>
-      {props.lista.map((res) => (
-        <Card>
-          <TopCard>
-            <img className="topCardImage" src={res.nomeImagemProduto} />
-          </TopCard>
-          <div className="bottom-card">
-            <span>{res.nomeProduto}</span>
-            <span>R${res.valorUnitario}</span>
-            <BotaoAdicionarCarrinho produto={res}></BotaoAdicionarCarrinho>
-          </div>
-        </Card>
+      {props.lista.map(res => (
+        <Card produto={res} />
       ))}
     </CardContainer>
-  );
-};
+  )
+}

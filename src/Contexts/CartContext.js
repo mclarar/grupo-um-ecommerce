@@ -1,16 +1,27 @@
-import React from "react";
-import { Children, createContext } from "react";
-import { useState } from "react";
+import React from 'react'
+import { Children, createContext } from 'react'
+import { useState, useEffect } from 'react'
 
-export const CartContext = createContext();
+export const CartContext = createContext()
 export const CartProvider = ({ children }) => {
-  const [cart, setCart] = useState([]);
+  const [precoTotal, setPrecoTotal] = useState()
+  const [cart, setCart] = useState([])
+
+  useEffect(() => {
+    let soma = 0
+    cart.map(item => {
+      soma = soma + Number(item.valorUnitario)
+    })
+
+    console.log(cart)
+    setPrecoTotal(soma)
+  }, [cart])
 
   function addItem(item) {
-    const aux = cart;
-    aux.push(item);
-    setCart(aux);
-    console.log(cart);
+    const aux = cart
+    aux.push(item)
+    setCart(aux)
+    console.log(cart)
   }
 
   function removeItem(id) {
@@ -18,20 +29,22 @@ export const CartProvider = ({ children }) => {
     // setCart(filteredCart);
     for (var i = 0; i < cart.length; i++) {
       if (cart[i] === id) {
-        cart.splice(i, 1);
+        cart.splice(i, 1)
       }
     }
-    console.log(cart);
+    console.log(cart)
   }
 
   function clearCart() {
-    setCart([]);
-    console.log(cart);
+    setCart([])
+    console.log(cart)
   }
 
   return (
-    <CartContext.Provider value={{ cart, addItem, removeItem, clearCart }}>
+    <CartContext.Provider
+      value={{ cart, addItem, removeItem, clearCart, precoTotal }}
+    >
       {children}
     </CartContext.Provider>
-  );
-};
+  )
+}

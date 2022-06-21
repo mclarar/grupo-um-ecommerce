@@ -1,0 +1,12 @@
+.snackbar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #121212;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
