@@ -50,7 +50,7 @@ export const LoginPage = () => {
     });
     if (email === "cliente01@gmail.com") {
       if (password === "123456") {
-        localStorage.setItem("logado", "adm");
+        localStorage.setItem("logado", "sim");
         navigate("/");
         document.location.reload();
       }

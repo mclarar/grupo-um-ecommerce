@@ -2,6 +2,7 @@ import { React } from 'react'
 import logo from './Imagens/logo-.png'
 import carrinho from './Imagens/carrinho.svg'
 import usuario from './Imagens/usuario.svg'
+// import manete from './Imagens/manete.jpg';
 
 import {
   Barra,
@@ -9,25 +10,28 @@ import {
   Botao,
   Carrinho,
   Lista,
-  Icons
-} from '../BarraPesquisa/Style'
+  Icons,
+  ImgHeader
+} from '../Navbar/StyleNavBar'
 import { Link, useNavigate } from 'react-router-dom'
-// import { BarraPesquisa } from "./BarraPesquisa";
 
 export const NavBar = () => {
   const navigate = useNavigate()
   return (
     <>
+    <header>
+      <ImgHeader src='https://cdn.discordapp.com/attachments/961357270967517209/988608023469621269/manetes.JPG'/>
+    </header>
       <Barra>
         <BotaoBarra>
           <Lista>
             {/* usar link ou navigate ao invés de href */}
-            <a href="/">
+            <a href="/home">
               <img src={logo} alt="logo" />
             </a>
           </Lista>
           <Lista>
-            <Botao to="/">Home</Botao>
+            <Botao to="/home">Home</Botao>
           </Lista>
           <Lista>
             <Botao to="/sobre">Sobre</Botao>

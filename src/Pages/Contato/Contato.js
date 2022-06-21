@@ -5,7 +5,6 @@ import email from './Imagens/email.png'
 import portfolio from './Imagens/portfolio.png'
 import "./stylecontato.css"
 import { IconsContato } from "./styleContato";
-// import { GMap } from 'primereact/gmap';
 
 export const Contato = () =>{
 

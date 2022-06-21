@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { NavBar } from '../Components/Navbar/NavBar'
-import { Home } from '../Pages/Home'
+import { Home } from '../Pages/Home/Home'
 import { Contato } from '../Pages/Contato/Contato'
 import { Sobre } from '../Pages/Sobre/Sobre'
 import { NotFound } from '../Pages/NotFound'

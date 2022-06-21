@@ -1,6 +1,12 @@
 import styled from "styled-components";
 import {  Link } from "react-router-dom";
 
+export const ImgHeader = styled.img`
+width: 100%;
+height: 200px;
+padding: 0;
+`;
+
 export const Barra = styled.nav`
 margin: 0;
 border: 0;
@@ -15,17 +21,19 @@ padding-top: 10px;
 export const BotaoBarra = styled.ul`
 list-style-type: none;
 text-decoration: none;
-background-color: blueviolet;
+background-color: #a9a9a9;
 overflow: hidden;
 margin: 0;
 padding: 0;
+display: flex;
+justify-content: center;
   
 `;
 export const Botao = styled(Link)`
 text-overflow: ellipsis;
 text-decoration: none;
 display: block;
-color: black;
+color: #00d200;
 padding: 1.5rem;
 font-size: 22px;
 font-family:'Quantico', sans-serif;

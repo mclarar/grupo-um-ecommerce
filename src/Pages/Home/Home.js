@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useContext } from "react";
-import { BarraPesquisa } from "../Components/BarraPesquisa/BarraPesquisa";
-import { buscarProdutos } from "../Service/api";
-import { Cards } from "../Components/Cards/Cards";
-import { Fundo } from "../Components/BarraPesquisa/Style";
-import { CartContext } from "../Contexts/CartContext";
+import { BarraPesquisa } from "../../Components/BarraPesquisa/BarraPesquisa";
+import { buscarProdutos } from "../../Service/api";
+import { Cards } from "../../Components/Cards/Cards";
+import { Fundo } from "../../Components/BarraPesquisa/Style";
+// import { CartContext } from "../Contexts/CartContext";
 import axios from "axios";
 
 export const Home = () => {
