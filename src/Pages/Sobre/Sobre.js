@@ -1,5 +1,11 @@
 import React from 'react'
 import { Fundo } from '../../Components/BarraPesquisa/Style'
+import amanda from "./Imagens/amanda.svg";
+import alexandre from "./Imagens/alexandre.svg";
+import angelica from "./Imagens/angelica.svg";
+import henrique from "./Imagens/henrique.svg";
+import maria from "./Imagens/mclara.svg";
+import roberta from "./Imagens/roberta.svg";
 import './stylesobre.css'
 
 export const Sobre = () => {
@@ -10,7 +16,7 @@ export const Sobre = () => {
         <div class="pessoa">
           <div class="foto">
             <img
-              src="https://raw.githubusercontent.com/mclarar/trabalhoFinalFrontEnd/e49740571bf9b3feeea05a58d90795b3ba97753e/pg-%20sobre/assets/mclara.svg"
+              src={maria}
               alt="Desenvolvedora Maria Clara"
             />
           </div>
@@ -35,7 +41,7 @@ export const Sobre = () => {
         <div class="pessoa">
           <div class="foto">
             <img
-              src="https://raw.githubusercontent.com/mclarar/trabalhoFinalFrontEnd/e49740571bf9b3feeea05a58d90795b3ba97753e/pg-%20sobre/assets/roberta.svg"
+              src={roberta}
               alt="Desenvolvedora Roberta"
             />
           </div>
@@ -53,7 +59,7 @@ export const Sobre = () => {
         <div class="pessoa">
           <div class="foto">
             <img
-              src="https://raw.githubusercontent.com/mclarar/trabalhoFinalFrontEnd/e49740571bf9b3feeea05a58d90795b3ba97753e/pg-%20sobre/assets/alexandre.svg"
+              src={alexandre}
               alt="Desenvolvedor Alexandre"
             />
           </div>
@@ -75,7 +81,7 @@ export const Sobre = () => {
         <div class="pessoa">
           <div class="foto">
             <img
-              src="https://raw.githubusercontent.com/mclarar/trabalhoFinalFrontEnd/e49740571bf9b3feeea05a58d90795b3ba97753e/pg-%20sobre/assets/angelica.svg"
+              src={angelica}
               alt="Desenvolvedora Angelica"
             />
           </div>
@@ -90,7 +96,7 @@ export const Sobre = () => {
         <div class="pessoa">
           <div class="foto">
             <img
-              src="https://raw.githubusercontent.com/mclarar/trabalhoFinalFrontEnd/e49740571bf9b3feeea05a58d90795b3ba97753e/pg-%20sobre/assets/henrique.svg"
+              src={henrique}
               alt="Desenvolvedor Henrique"
             />
           </div>
@@ -104,7 +110,7 @@ export const Sobre = () => {
         <div class="pessoa">
           <div class="foto">
             <img
-              src="https://raw.githubusercontent.com/mclarar/trabalhoFinalFrontEnd/e49740571bf9b3feeea05a58d90795b3ba97753e/pg-%20sobre/assets/amanda.svg"
+              src={amanda}
               alt="Desenvolvedora Amanda"
             />
           </div>

@@ -1,57 +1,88 @@
 h1{
-    text-align: center;
-    margin-top: 1rem;
-  }
-  hr{
-    margin-left: 25rem;
-  }
-  
-  .container{
+  text-align: center;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo {
+  color: aliceblue;
+  background-color: rgb(156, 23, 218);
+  margin: 0%;
+  font-family:'Quantico', sans-serif;
+}
+.foto{
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+
+.foto img{
+  display: flex;
+  width: 30%;
+  border-radius: 30%;
+}
+
+.pessoa{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: auto;
+  gap: 0.7rem;
+  padding: 0.7rem;
+  align-items: center;
+}
+
+
+.sobre{
+  display: flex;
+  width: 80%;
+  height: 80%;
+  color: rgb(21, 22, 22);
+  background-color: #39ff14;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  font-family:'Quantico', sans-serif;
+}
+
+  @media (min-width: 575px) {
+   
+    .container{
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-  }
-  
-  .titulo {
-    color: aliceblue;
-    background-color: rgb(156, 23, 218);
-    margin: 0%;
-    font-family:'Quantico', sans-serif;
   }
   
   .pessoa{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    margin: auto;
-    gap: 1rem;
-    padding: 1rem;
-    align-items: center;
+    flex-direction: row;
   }
-  
-  .foto{
-    display: flex;
-    justify-content: center;
-    width: 60%;
-  }
-  
-  .foto img{
-    display: flex;
-    width: 40%;
-    border-radius: 40%;
-  }
-  
   .sobre{
-    display: flex;
     width: 100%;
-    height: 80%;
-    color: aliceblue;
-    background-color: #643887;
-    border-radius: 0.5rem;
-    text-align: center;
-    font-size: 1rem;
-    padding: 1rem;
-    justify-content: center;
-    align-items: center;
-    font-family:'Quantico', sans-serif;
   }
+  .foto{
+    width: 60%;
+    height: 60%;
+  }
+  .foto img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+  }
+  
+  }
+  
+  
+
+  
+  
+  
+  
