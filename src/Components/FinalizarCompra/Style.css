@@ -1,0 +1,25 @@
+.finalizarCompra{
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 1rem;
+    width: 50%;
+    border-radius: 0.5rem;
+    background-color: #e4e4e4;
+}
+
+.centro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.limparCarrinho{
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 3rem;
+}
