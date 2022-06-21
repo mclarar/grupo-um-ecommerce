@@ -4,12 +4,13 @@ import { Fundo } from '../../Components/BarraPesquisa/Style'
 import { CartContext } from '../../Contexts/CartContext'
 import { CarrinhoCards } from '../../Components/Carrinho/CarrinhoCards'
 import { FinalizarCompra } from '../../Components/FinalizarCompra/FinalizarCompra'
+import './style.css'
 
 export const CarrinhoCompras = () => {
   const { cart, addItem, removeItem, clearCart } = useContext(CartContext)
 
   return (
-    <div>
+    <div className="conteiner">
       <Fundo>
         <BarraPesquisa />
         {/* criar componente card, com componentes de diminuir ou aumentar quantidade e remover do carrinho */}
