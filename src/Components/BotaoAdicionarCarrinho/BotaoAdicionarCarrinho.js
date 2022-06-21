@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { CartContext } from '../../Contexts/CartContext'
+import './style.css'
 
 export const BotaoAdicionarCarrinho = ({ produto, setPopUp }) => {
   const { cart, addItem, removeItem, clearCart } = useContext(CartContext)
@@ -10,7 +11,9 @@ export const BotaoAdicionarCarrinho = ({ produto, setPopUp }) => {
   }
   return (
     <>
-      <button onClick={() => chamarDuasFuncoes()}>Adicionar ao Carrinho</button>
+      <button onClick={() => chamarDuasFuncoes()}>
+        <strong>Adicionar ao Carrinho</strong>
+      </button>
     </>
   )
 }
