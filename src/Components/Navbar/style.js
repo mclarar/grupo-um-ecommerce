@@ -27,6 +27,10 @@ export const BotaoBarra = styled.ul`
   padding: 0;
   display: flex;
   justify-content: center;
+  @media only screen and (max-width: 700px){
+    flex-direction: column;
+    text-align: center;
+    }
 `
 export const Botao = styled(Link)`
   text-overflow: ellipsis;
