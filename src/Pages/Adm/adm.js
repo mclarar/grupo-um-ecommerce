@@ -45,7 +45,7 @@ export const Adm = () => {
       idCategoria
     })
 
-    axios.post('http://localhost:8080/ecommerce/produto',prod)
+    axios.post('http://localhost:8080/ecommerce/produto', prod)
   }
   return (
     <div id="cadastroProd">

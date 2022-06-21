@@ -1,12 +1,13 @@
-import React, { useContext, useState } from "react";
-import { BarraPesquisa } from "../../Components/BarraPesquisa/BarraPesquisa";
-import { Fundo } from "../../Components/BarraPesquisa/Style";
-import { CartContext } from "../../Contexts/CartContext";
-import { Cards } from "../../Components/Cards/Cards";
-import axios from "axios";
+import React, { useContext, useState } from 'react'
+import { BarraPesquisa } from '../../Components/BarraPesquisa/BarraPesquisa'
+import { Fundo } from '../../Components/BarraPesquisa/Style'
+import { CartContext } from '../../Contexts/CartContext'
+import { Cards } from '../../Components/Cards/Cards'
+import axios from 'axios'
 
 export const CarrinhoCompras = () => {
-  const { cart, addItem, removeItem, clearCart } = useContext(CartContext);
+  const { cart, addItem, removeItem, clearCart } = useContext(CartContext)
+
   //teste
   function jsonProduto() {
     let daa = []
@@ -26,25 +27,25 @@ export const CarrinhoCompras = () => {
     for (let index = 0; index <= 1; index++) {
       daa[index] = {
         produto: {
-          idProduto: cart[index].idProduto,
+          idProduto: cart[index].idProduto
         },
         quantidade: 1,
         precoVenda: cart[index].valorUnitario,
-        percentualDesconto: 0.1,
-      };
+        percentualDesconto: 0.1
+      }
     }
 
-    console.log(daa);
-    teste(daa);
+    console.log(daa)
+    teste(daa)
   }
 
   function teste(daa) {
     let haha = {
       idCliente: 1,
-      itemPedidoList: [daa[1]],
-    };
-    console.log(haha);
-    axios.post("http://localhost:8080/ecommerce/pedido", haha);
+      itemPedidoList: [daa[1]]
+    }
+    console.log(haha)
+    axios.post('http://localhost:8080/ecommerce/pedido', haha)
   }
 
   return (
@@ -56,5 +57,5 @@ export const CarrinhoCompras = () => {
         <button onClick={() => jsonProduto()}>dasda</button>
       </Fundo>
     </div>
-  );
-};
+  )
+}

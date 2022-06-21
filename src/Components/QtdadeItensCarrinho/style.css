@@ -1,0 +1,13 @@
+.qtdadecarrinho{
+  background-color: aqua;
+  border-radius: 50%;
+  width: 3rem;
+ align-items: center;
+ z-index: 1;
+  
+}
+.qtdadecarrinho h1{
+  text-align: center;
+}
+
+

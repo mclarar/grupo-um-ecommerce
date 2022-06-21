@@ -23,14 +23,14 @@ export const Root = () => {
       <Routes>
         {logado === 'sim' && (
           <>
-            <Route path="/home" element={<Home />} />
-            <Route path="/sobre" element={<Sobre />} />
-            <Route path="/contato" element={<Contato />} />
-            <Route path="/carrinho" element={<CarrinhoCompras />} />
             <Route path="/Adm" element={<Adm />} />
           </>
         )}
-        
+
+        <Route path="/home" element={<Home />} />
+        <Route path="/sobre" element={<Sobre />} />
+        <Route path="/contato" element={<Contato />} />
+        <Route path="/carrinho" element={<CarrinhoCompras />} />
         <Route path="/" element={<LoginPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
