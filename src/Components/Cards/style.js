@@ -29,6 +29,7 @@ export const CardStyle = styled.div`
   background-size: 100% 100%;
   object-fit: cover;
   transform: scale(1);
+
   &:hover {
     background-color: #d1cbcb;
     color: #fff;

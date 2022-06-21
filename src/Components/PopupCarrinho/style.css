@@ -9,4 +9,7 @@
   display: flex;
   align-items: center;
   transition: 0.3s;
+  display:  grid;
+  grid-template: minmax(0, 1fr);
+  
 }
