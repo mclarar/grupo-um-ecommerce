@@ -5,9 +5,9 @@ import { BarraSearch, BarraGray } from './Style'
 export const BarraPesquisa = () => {
   return (
     <BarraGray>
-      <BarraSearch>
+      {/* <BarraSearch> */}
         <InputGroupDemo />
-      </BarraSearch>
+      {/* </BarraSearch> */}
     </BarraGray>
   )
 }

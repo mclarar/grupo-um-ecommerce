@@ -7,11 +7,20 @@ export const InputContainer = styled.div`
 
   flex-direction: row;
 
+  div{
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+
   .barra {
     height: 2rem;
-    width: 400px;
+    width: 80%;
     margin: 10px;
-    margin-left: 33rem;
+    
   }
 
   .botaoSearch {
