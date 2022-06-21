@@ -8,11 +8,24 @@ import './PasswordDemo.css'
 import './ButtonDemo.css'
 import './style.css'
 import { buscarCliente } from '../../Service/api'
+import * as yup from 'yup'
 
 export const LoginPage = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [clientes, setClientes] = useState([])
+
+  // let schema = yup.object().shape({
+  //   email: yup.string().email(),
+  //   password: yup.string().password()
+  // })
+
+  // schema
+  //   .isValid({
+  //     email: 'adm01@gmail.com',
+  //     password: '123456'
+  //   })
+  //   .then(function (valid) {})
 
   const navigate = useNavigate()
 
@@ -45,7 +58,7 @@ export const LoginPage = () => {
         }
       }
     })
-    if (email === 'cliente01@gmail.com') {
+    if (email === 'adm01@gmail.com') {
       if (password === '123456') {
         localStorage.setItem('logado', 'sim')
         navigate('/home')
