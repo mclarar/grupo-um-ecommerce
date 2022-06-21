@@ -11,12 +11,12 @@ export const InputGroupDemo = () => {
 
   return (
     <InputContainer>
-      <div className="col-12 md:col-4">
-        <div className="p-inputgroup">
+      {/* <div className="col-12 md:col-4"> */}
+        <div>
           <InputText className="barra" placeholder="Digite aqui o que deseja" />
           <Button className="botaoSearch"> GO!</Button>
         </div>
-      </div>
+      {/* </div> */}
     </InputContainer>
   )
 }

@@ -8,6 +8,9 @@ export const CardContainer = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
   justify-content: space-evenly;
+  @media only screen and (max-width: 800px){
+    grid-template-columns: 1fr 1fr 1fr;
+    }
 `
 
 export const CardStyle = styled.div`
