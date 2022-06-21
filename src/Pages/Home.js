@@ -5,6 +5,7 @@ import { Cards } from '../Components/Cards/Cards'
 import { Fundo } from '../Components/BarraPesquisa/Style'
 import { CartContext } from '../Contexts/CartContext'
 import axios from 'axios'
+import { QtdadeItensCarrinho } from '../Components/QtdadeItensCarrinho/QtdadeItensCarrinho'
 
 export const Home = () => {
   const [produtos, setProdutos] = useState([])
@@ -28,6 +29,8 @@ export const Home = () => {
     <>
       <Fundo>
         <BarraPesquisa />
+
+        <QtdadeItensCarrinho />
         <Cards lista={produtos} />
       </Fundo>
     </>

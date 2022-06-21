@@ -12,6 +12,7 @@ import {
   Icons
 } from '../BarraPesquisa/Style'
 import { Link, useNavigate } from 'react-router-dom'
+import { QtdadeItensCarrinho } from '../QtdadeItensCarrinho/QtdadeItensCarrinho'
 // import { BarraPesquisa } from "./BarraPesquisa";
 
 export const NavBar = () => {
