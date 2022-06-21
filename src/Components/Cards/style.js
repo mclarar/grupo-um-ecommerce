@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const CardContainer = styled.div`
   padding: 5rem;
@@ -8,10 +8,17 @@ export const CardContainer = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
   justify-content: space-evenly;
-  @media only screen and (max-width: 800px){
+  @media only screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr 1fr;
-    }
-`
+  }
+  @media only screen and (max-width: 700px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media only screen and (max-width: 540px) {
+    grid-template-columns: 1fr ;
+  }
+`;
 
 export const CardStyle = styled.div`
   display: flex;
@@ -39,20 +46,20 @@ export const CardStyle = styled.div`
     transform: scale(1.05);
     cursor: pointer;
   }
-`
+`;
 
 export const TopCard = styled.div`
   width: 50%;
   height: 50%;
   display: flex;
   align-items: center;
-`
+`;
 
 export const topCardImage = styled.img`
   width: 100%;
   height: 100%;
   align-items: center;
-`
+`;
 
 export const bottomCard = styled.div`
   width: 100%;
@@ -62,4 +69,4 @@ export const bottomCard = styled.div`
   justify-content: center;
   align-items: center;
   opacity: 0%;
-`
+`;
