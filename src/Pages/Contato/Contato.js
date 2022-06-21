@@ -53,7 +53,6 @@ export const Contato = () => {
                   <br />
                   <label htmlFor="nome">Nome</label>
                   <InputText
-                    style={{ width: 500 }}
                     className="username"
                     id="username"
                     value={nome}
@@ -64,7 +63,6 @@ export const Contato = () => {
                   <label htmlFor="email">Email</label>
                   <InputText
                     type="email"
-                    style={{ width: 500 }}
                     className="email"
                     id="email"
                     value={emailPessoa}
@@ -76,11 +74,10 @@ export const Contato = () => {
                   <label htmlFor="text">Digite sua mensagem</label>
                   <InputTextarea
                     className="inputext"
-                    style={{ width: 500 }}
                     value={texto}
                     onChange={e => setTexto(e.target.value)}
-                    rows={5}
-                    cols={30}
+                    // rows={5}
+                    // cols={30}
                     autoResize
                   />
                 </div>
