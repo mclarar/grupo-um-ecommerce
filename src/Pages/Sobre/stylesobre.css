@@ -1,15 +1,39 @@
-h1{
+
+h3{
   text-align: center;
 }
+  .container{
+    width: 100%;
+    height: 100vh;
+    background-color: #e4e4e4;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Quantico', sans-serif;
+  
+  }
+  .texto{
+    
+    width: 50%;
+  }
+  .beemo{
+    
+    width: 300px;
+    height: 300px;
+    margin-top: 3rem;
+  }
 
-.container{
+
+/* .container{
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-}
+  justify-content: center;
+} */
 
-.titulo {
+/* .titulo {
   color: aliceblue;
   background-color: rgb(156, 23, 218);
   margin: 0%;
@@ -51,7 +75,7 @@ h1{
   align-items: center;
   padding: 30px;
   font-family:'Quantico', sans-serif;
-}
+} */
 
   @media (min-width: 575px) {
    
